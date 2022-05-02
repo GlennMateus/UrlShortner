@@ -14,6 +14,7 @@ A simple way to get your URL shorten.
 - Domain Driven Design
 - Dependency Injection
 - SOLID (I tried 😂😂)
+- Repository pattern
 ---
 # Install instructions
 > **Requirements**
