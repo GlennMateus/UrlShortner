@@ -36,7 +36,8 @@ dotnet ef database update
 ```
 ---
 # TODO
-[ ] Implement unit tests
-[ ] Implement integration tests
-[ ] Implement deployment pipelines
-[ ] Upload to a cloud server (AWS/ Azure)
+- [ ] Implement unit tests
+- [ ] Implement integration tests
+- [ ] Implement deployment pipelines
+- [ ] Upload to a cloud server (AWS/ Azure)
+- [ ] Create UI
