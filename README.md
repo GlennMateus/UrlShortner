@@ -1,5 +1,19 @@
-# UrlShortner
+# UrlShortner API
+A simple way to get your URL shorten.
 
+---
+# Tech stack
+- C# v10
+- .NET Core (v6)
+- Entity Framework Core
+- Fast Endpoints => [link here](https://www.nuget.org/packages/FastEndpoints)
+- Fluent Validation => [link here](https://docs.fluentvalidation.net/en/latest/)
+- NanoId => [link here](https://www.nuget.org/packages/Nanoid/)
+---
+# Patters
+- Domain Driven Design
+- Dependency Injection
+- SOLID (I tried 😂😂)
 ---
 # Install instructions
 > **Requirements**
