@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortening.API", "UrlShortening.API\UrlShortening.API.csproj", "{DA9136BA-53C9-46DE-B525-B0871C4778E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortening.Domain", "UrlShortening.Domain\UrlShortening.Domain.csproj", "{DD0D0133-792C-49AA-BBF7-A05216914792}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortening.Repository", "UrlShortening.Repository\UrlShortening.Repository.csproj", "{4164E36A-8B4E-4493-A43C-66BCC6AFC8C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA9136BA-53C9-46DE-B525-B0871C4778E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA9136BA-53C9-46DE-B525-B0871C4778E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA9136BA-53C9-46DE-B525-B0871C4778E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA9136BA-53C9-46DE-B525-B0871C4778E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD0D0133-792C-49AA-BBF7-A05216914792}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD0D0133-792C-49AA-BBF7-A05216914792}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD0D0133-792C-49AA-BBF7-A05216914792}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD0D0133-792C-49AA-BBF7-A05216914792}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4164E36A-8B4E-4493-A43C-66BCC6AFC8C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4164E36A-8B4E-4493-A43C-66BCC6AFC8C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4164E36A-8B4E-4493-A43C-66BCC6AFC8C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4164E36A-8B4E-4493-A43C-66BCC6AFC8C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
