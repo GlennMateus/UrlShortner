@@ -9,19 +9,31 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="FastEndpoints" Version="4.0.0"/>
-        <PackageReference Include="FastEndpoints.Swagger" Version="4.0.0"/>
-        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3"/>
+        <PackageReference Include="FastEndpoints" Version="4.0.0" />
+        <PackageReference Include="FastEndpoints.Swagger" Version="4.0.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\UrlShortening.Repository\UrlShortening.Repository.csproj"/>
-        <ProjectReference Include="..\UrlShortening.Domain\UrlShortening.Domain.csproj"/>
+        <ProjectReference Include="..\UrlShortening.Repository\UrlShortening.Repository.csproj" />
+        <ProjectReference Include="..\UrlShortening.Domain\UrlShortening.Domain.csproj" />
     </ItemGroup>
     <ItemGroup>
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.4">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
+    </ItemGroup>
+    <ItemGroup>
+      <Compile Remove="Features\Admin\**" />
+    </ItemGroup>
+    <ItemGroup>
+      <EmbeddedResource Remove="Features\Admin\**" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Remove="Features\Admin\**" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Remove="Features\Admin\**" />
     </ItemGroup>
 </Project>
