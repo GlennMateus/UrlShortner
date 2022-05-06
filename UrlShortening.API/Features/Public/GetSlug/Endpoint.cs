@@ -16,7 +16,7 @@ public class UrlEndpoint : Endpoint<Request>
 
     public override void Configure()
     {
-        Get("/");
+        Get("/{slug}");
         AllowAnonymous();
     }
 
