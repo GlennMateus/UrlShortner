@@ -1,12 +1,9 @@
-﻿
-
-using Domain.Models;
+﻿using Domain.Models;
 using Domain.Models.Errors;
 using Infrastructure.Data.SQL;
 using Infrastructure.Interfaces;
 using UrlShortening.Domain.Models.CreateUrlModelRequest;
 using UrlShortening.Domain.Models.CreateUrlModelResponse;
-using UrlShortening.Domain.Validators.CreateUrlRequestValidator;
 
 namespace Infrastructure.Repositories;
 
@@ -21,18 +18,8 @@ public class UrlRepository : IUrlRepository
 
     public CreateUrlModelResponse Add(CreateUrlModelRequest data)
     {
-        var validator = new CreateUrlRequestValidator();
-        var validationResultesult = validator.Validate(data);
-        if (!validationResultesult.IsValid)
-        {
-            throw new ArgumentException(
-                string.Join("\n- ", validationResultesult.Errors)
-            );
-        }
-        if(GetBySlug(data.Slug) != null)
-        {
-            throw new SlugAlreadyExistsException($"Slug: {data.Slug} already in use!");
-        }
+        data.Validate();
+        CheckIfSlugExists(data.Slug);
         var newUrl = _dbContext.Url.Add(new UrlModel(data.Url, data.Slug));
         _dbContext.SaveChanges();
 
@@ -48,5 +35,14 @@ public class UrlRepository : IUrlRepository
     {
         var url = _dbContext.Url.FirstOrDefault(url => url.Slug.Equals(slug));
         return url;
+    }
+
+    private void CheckIfSlugExists(string slug)
+    {
+        var testSlug = GetBySlug(slug);
+        if(testSlug != null)
+        {
+            throw new SlugAlreadyExistsException($"Slug: {slug} already in use!");
+        }
     }
 }
