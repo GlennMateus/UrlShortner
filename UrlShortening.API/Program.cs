@@ -4,7 +4,6 @@ using Infrastructure.Data.SQL;
 using Infrastructure.Interfaces;
 using Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
-//add this
 
 var builder = WebApplication.CreateBuilder();
 

@@ -32,8 +32,12 @@
     </ItemGroup>
     <ItemGroup>
       <None Remove="Features\Admin\**" />
+      <None Remove="dockerfile" />
     </ItemGroup>
     <ItemGroup>
       <Content Remove="Features\Admin\**" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include=".github\workflows" />
     </ItemGroup>
 </Project>
